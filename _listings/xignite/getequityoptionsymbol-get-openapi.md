@@ -1,12 +1,14 @@
+---
 swagger: "2.0"
 x-collection-name: Xignite
-x-complete: 1
+x-complete: 0
 info:
-  title: Xignite VWAP
-  description: provides-delayed-and-historical-volumeweightedaverage-price-vwap-information-
+  title: Xignite Global Real Time Options Get Equity Option Symbol
+  description: Returns the symbol for an equity option based on month, year and strike
+    price.
   version: 1.0.0
-host: www.xignite.com
-basePath: xVWAP.json/XigniteVWAP
+host: globalrealtimeoptions.xignite.com
+basePath: xglobalrealtimeoptions.json/XigniteGlobalRealTimeOptions
 schemes:
 - http
 produces:
@@ -216,3 +218,17 @@ paths:
       - Equity
       - Option
       - Symbols
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
